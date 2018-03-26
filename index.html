@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+     <head>
+     <meta charset="utf-8" />
+	 <link rel="stylesheet" href="css-form.css" />
+	 <title>Formulaire JavaScript</title>
+	 <meta name="description" content="Réaliser un formulaire en JavaScript" />
+	 <meta name="keywords" content="formulaire, javascript" />
+	 <meta name="author" content="Maxime JANOD" />
+	 <link rel="icon" type="image/png" href="../menu-html5/images/favicon-html.png" /> <!--Favicon du site ( 16x16 )-->
+     </head>
+<body>
+     <header>
+	 
+	 </header>
+			               <form id="form" name="FormValid" onsubmit="return(validate());" class="topBefore">
+		                   <input id="nom" name="nom" type="text" placeholder="NOM"><br>
+						   <input id="prenom" name="prenom" type="text" placeholder="PRENOM"><br>
+						   <select id="selection" name="selection">
+                              <option value="-1" selected>CIVILITÉ</option>
+                              <option value="1">MADAME</option>
+                              <option value="2">MONSIEUR</option>
+                           </select><br>
+						   
+		                   <input id="email" name="email" type="email" placeholder="E-MAIL"><br>
+		                   <textarea id="message" type="text" name="message" placeholder="MESSAGE"></textarea><br>
+						      <div class="radio">
+						      <label><input type="radio" name="radPro" value="1" style="width:16px; height:10px;">Professionnel</label>
+                              <label><input type="radio" name="radPro" value="2" style="width:16px; height:10px;">Personnel</label><br></div>
+                           <input id="submit" type="submit" onclick="return radioValidation();" value="ENVOYER !">		              
+                           </form>
+		<script src="formjs.js"></script>
+</body>
+</html>
